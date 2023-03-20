@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section {
+    padding: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    padding: 2rem 4rem;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+header .logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .logo-container .logo {
+    width: 6rem;
+    margin-right: 1rem;
+}
+
+/* Meme Section CSS starts */
+.content {
+    text-align: center;
+}
+
+.content form * {
+    margin: 2rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.content form input {
+    width: 20%;
+    border: 0.3rem solid #D5D4D8;
+}
+
+.content form .new-img-btn {
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    display: block;
+    width: calc(40% + 9rem);
+    margin: auto auto;
+    padding-block: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.meme {
+    position: relative;
+    /* width: fit-content; */
+
+}
+
+.meme img {
+    margin-top: 2rem;
+    max-width: 80rem;
+    height: 60rem;
+}
+
+.meme .top-text,
+.meme .bottom-text {
+    text-align: center;
+    /* width: 40rem; */
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 800;
+    text-shadow: 0.5rem -0.2rem 0.9rem black;
+    text-transform: uppercase;
+}
+
+.meme .top-text {
+    top: 10%;
+}
+
+.meme .bottom-text {
+    bottom: 10%;
+}
+
+.container {
+    font-size: 2rem;
+    height: 30vh;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.container button {
+    font-size: 4rem;
+}
+
+.temp * {
+    font-size: 4rem;
 }
